@@ -1,0 +1,16 @@
+namespace LabPolymorphism;
+
+public class Car : Vehicle, IRefuelable
+{
+    public Car(string brand, int speed) : base(brand, speed) { }
+
+    public override void Move()
+    {
+        Console.WriteLine($"Автомобіль {brand} їде дорогою зі швидкістю {speed} км/год.");
+    }
+
+    public void Refill()
+    {
+        Console.WriteLine($"Автомобіль {brand} заправляється паливом.");
+    }
+}
