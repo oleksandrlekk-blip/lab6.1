@@ -1,0 +1,6 @@
+namespace LabPolymorphism;
+
+public interface IRefuelable
+{
+    void Refill();
+}
